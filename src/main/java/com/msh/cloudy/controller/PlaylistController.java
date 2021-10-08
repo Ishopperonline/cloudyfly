@@ -10,6 +10,7 @@ public class PlaylistController {
 
 	@GetMapping("/test")
 	public String testHello() {
+		System.out.println("In Test Method");
 		return "Welcome to Cloudify";
 		
 	}
