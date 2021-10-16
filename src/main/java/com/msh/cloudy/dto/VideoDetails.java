@@ -14,6 +14,16 @@ public class VideoDetails {
 	private String videoTitle;
 	@JsonProperty("video_thumbnail_url")
 	private String videoThumbnailUrl;
+	@JsonProperty("video_mainurl")
+	private String videoMainurl;
+	public String getVideoMainurl() {
+		return videoMainurl;
+	}
+
+	public void setVideoMainurl(String videoMainurl) {
+		this.videoMainurl = videoMainurl;
+	}
+
 	@JsonProperty("video_id")
 	private Integer videoId;
 	

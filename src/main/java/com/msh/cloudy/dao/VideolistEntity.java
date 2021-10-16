@@ -28,6 +28,17 @@ public class VideolistEntity {
 	@Column(name = "video_thumbnail_url", nullable = false)
 	String videoThumbnailUrl;
 	
+	@Column(name = "video_mainurl", nullable = false)
+	String videoMainurl;
+	
+	public String getVideoMainurl() {
+		return videoMainurl;
+	}
+
+	public void setVideoMainurl(String videoMainurl) {
+		this.videoMainurl = videoMainurl;
+	}
+
 	@Column(name = "video_title", nullable = false)
 	String videoTitle;
 	

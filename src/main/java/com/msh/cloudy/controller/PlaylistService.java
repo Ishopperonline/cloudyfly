@@ -130,6 +130,7 @@ public class PlaylistService {
 		videoDetailsDTO.setVideoTitle(videolistEntity.getVideoTitle());
 		videoDetailsDTO.setVideoWebId(videolistEntity.getVideoWebId());
 		videoDetailsDTO.setVideoId(videolistEntity.getVideolistId());
+		videoDetailsDTO.setVideoMainurl(videolistEntity.getVideoMainurl());
 		return videoDetailsDTO;
 	}
 
@@ -140,6 +141,7 @@ public class PlaylistService {
 		videolistEntity.setVideoWebId(videoDetailsDTO.getVideoWebId());
 		videolistEntity.setCreateTs(new Date());
 		videolistEntity.setSubplaylistId(subplaylistId);
+		videolistEntity.setVideoMainurl(videoDetailsDTO.getVideoMainurl());
 		return videolistEntity;
 	}
 	
